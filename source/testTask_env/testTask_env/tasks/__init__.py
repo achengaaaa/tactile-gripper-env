@@ -3,12 +3,14 @@
 import os
 import toml
 
-from isaaclab_tasks.utils import import_packages
+from omni.isaac.lab_tasks.utils import import_packages
 
 ##
 # Register Gym environments.
 ##
 
+# Import our custom environments
+from . import my_elfin_lift
 
 # The blacklist is used to prevent importing configs from sub-packages
 _BLACKLIST_PKGS = ["utils"]
